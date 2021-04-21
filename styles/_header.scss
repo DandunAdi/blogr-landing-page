@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+  height: 600px;
+  background-image: url("../images/bg-pattern-intro.svg"),
+    linear-gradient(to right, $veryLightRed, $lightRed);
+  background-position: 20% 53%;
+  background-size: 200%;
+
+  .navbar {
+    &__menu {
+      width: 100%;
+      padding-top: 10px;
+    }
+
+    img {
+      margin-right: 40px;
+    }
+
+    &__link {
+      margin: 0 20px;
+      color: $white;
+      opacity: 0.9;
+
+      &:hover {
+        opacity: 1;
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+
+  .intro {
+    text-align: center;
+
+    p {
+      color: $lightGray;
+      font-family: $headingFont;
+    }
+  }
+}

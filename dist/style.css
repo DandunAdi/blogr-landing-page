@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #4b5862;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1f3f5b;
+  font-family: "Overpass", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #c8c8cb;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex__start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex__between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  margin: 5px;
+  border-radius: 40px;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.btn__primary {
+  background-color: white;
+  color: #ff525d;
+}
+
+.btn__primary:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.btn__outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn__outline:hover {
+  background-color: white;
+  color: #ff525d;
+}
+
+/* ----------TEXT---------- */
+.text-white {
+  color: white;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 1.5rem;
+}
+
+.lg {
+  font-size: 2rem;
+}
+
+.xl {
+  font-size: 3rem;
+}
+
+.xxl {
+  font-size: 4rem;
+}
+
+/* ----------MARGIN---------- */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/* ----------PADDING---------- */
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-4 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-5 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  background-image: url("../images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
+  background-position: 20% 53%;
+  background-size: 200%;
+}
+
+header .navbar__menu {
+  width: 100%;
+  padding-top: 10px;
+}
+
+header .navbar img {
+  margin-right: 40px;
+}
+
+header .navbar__link {
+  margin: 0 20px;
+  color: white;
+  opacity: 0.9;
+}
+
+header .navbar__link:hover {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+
+header .intro {
+  text-align: center;
+}
+
+header .intro p {
+  color: #eee;
+  font-family: "Overpass", sans-serif;
+}
+
+footer {
+  background-color: #25252d;
+}
+
+footer .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
