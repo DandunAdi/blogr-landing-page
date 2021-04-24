@@ -237,7 +237,7 @@ header .navbar__menu {
 }
 
 header .navbar__logo {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 header .navbar__link {
@@ -263,13 +263,14 @@ header .navbar__link:hover {
 
 header .navbar__dropdown {
   position: relative;
+  margin-left: 20px;
 }
 
 header .navbar__dropdown ul {
   position: absolute;
   top: 40px;
   background-color: white;
-  padding: 20px 20px;
+  padding: 10px 20px;
   width: 168px;
   border-radius: 5px;
   -webkit-box-shadow: 0 10px 20px rgba(44, 45, 63, 0.3);
@@ -291,7 +292,7 @@ header .navbar__dropdown ul a:hover {
 }
 
 header .navbar__dropdown ul li {
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 header .navbar__dropdown__arrow {
