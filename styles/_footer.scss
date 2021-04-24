@@ -1,6 +1,21 @@
 footer {
   background-color: $footerBackground;
+  border-top-right-radius: 95px;
+
+  a:hover {
+    border-bottom: solid 2px $white;
+  }
   .flex {
     justify-content: space-between;
+  }
+  .footer {
+    &__submenu li {
+      margin-top: 15px;
+      opacity: 0.9;
+
+      a:hover {
+        border-bottom: solid 2px rgba($color: $footerText, $alpha: 0.9);
+      }
+    }
   }
 }

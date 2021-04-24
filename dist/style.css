@@ -4,6 +4,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   color: #4b5862;
   overflow-x: hidden;
+  background-color: #fafafa;
 }
 
 h1,
@@ -14,6 +15,11 @@ h5,
 h6 {
   color: #1f3f5b;
   font-family: "Overpass", sans-serif;
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+  line-height: 1.8rem;
 }
 
 ul {
@@ -63,7 +69,7 @@ a {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -99,6 +105,10 @@ a {
 /* ----------TEXT---------- */
 .text-white {
   color: white;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .lead {
@@ -214,11 +224,11 @@ a {
 
 header {
   width: 100%;
-  height: 600px;
   background-image: url("../images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
   background-image: url("../images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-position: 20% 53%;
   background-size: 200%;
+  border-bottom-left-radius: 95px;
 }
 
 header .navbar__menu {
@@ -226,7 +236,7 @@ header .navbar__menu {
   padding-top: 10px;
 }
 
-header .navbar img {
+header .navbar__logo {
   margin-right: 40px;
 }
 
@@ -234,6 +244,16 @@ header .navbar__link {
   margin: 0 20px;
   color: white;
   opacity: 0.9;
+  background-color: transparent;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+header .navbar__link:focus {
+  outline: none;
 }
 
 header .navbar__link:hover {
@@ -241,23 +261,148 @@ header .navbar__link:hover {
   border-bottom: 2px solid white;
 }
 
+header .navbar__dropdown {
+  position: relative;
+}
+
+header .navbar__dropdown ul {
+  position: absolute;
+  top: 40px;
+  background-color: white;
+  padding: 20px 20px;
+  width: 168px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 20px rgba(44, 45, 63, 0.3);
+          box-shadow: 0 10px 20px rgba(44, 45, 63, 0.3);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+header .navbar__dropdown ul a {
+  color: #2c2d3f;
+}
+
+header .navbar__dropdown ul a:hover {
+  font-weight: 500;
+}
+
+header .navbar__dropdown ul li {
+  margin: 10px 0;
+}
+
+header .navbar__dropdown__arrow {
+  position: absolute;
+  right: 0;
+  top: 7px;
+}
+
+header .navbar__dropdown.open ul {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+header .navbar__dropdown.open img {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
 header .intro {
   text-align: center;
 }
 
 header .intro p {
-  color: #eee;
+  color: #fafafa;
   font-family: "Overpass", sans-serif;
+}
+
+main .design img {
+  position: absolute;
+  left: 55%;
+  height: 800px;
+}
+
+main .state {
+  min-height: 600px;
+  position: relative;
+}
+
+main .state__content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+main .state__background {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  z-index: -1;
+  height: 400px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
+  background: linear-gradient(to right, #2c2d3f, #3f4164);
+  overflow: hidden;
+  border-radius: 0 95px 0 95px;
+}
+
+main .state__background img {
+  position: absolute;
+  bottom: 0;
+  left: -350px;
+}
+
+main .state img {
+  width: 100%;
+  -o-object-position: -20px 0;
+     object-position: -20px 0;
+}
+
+main .tooling {
+  margin-bottom: 120px;
+}
+
+main .tooling__content {
+  min-height: 800px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .tooling img {
+  position: absolute;
+  right: 50%;
+  height: 800px;
 }
 
 footer {
   background-color: #25252d;
+  border-top-right-radius: 95px;
+}
+
+footer a:hover {
+  border-bottom: solid 2px white;
 }
 
 footer .flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+footer .footer__submenu li {
+  margin-top: 15px;
+  opacity: 0.9;
+}
+
+footer .footer__submenu li a:hover {
+  border-bottom: solid 2px rgba(200, 200, 203, 0.9);
 }
 
 * {

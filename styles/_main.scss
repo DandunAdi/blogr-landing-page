@@ -1,0 +1,55 @@
+main {
+  .design {
+    img {
+      position: absolute;
+      left: 55%;
+      height: 800px;
+    }
+  }
+  .state {
+    min-height: 600px;
+    position: relative;
+
+    &__content {
+      align-items: center;
+      height: 600px;
+    }
+    &__background {
+      position: absolute;
+      top: 28%;
+      left: 0;
+      z-index: -1;
+      height: 400px;
+      width: 100%;
+      background: linear-gradient(
+        to right,
+        $veryDarkGrayBlue,
+        $veryDarkDesaturatedBlue
+      );
+      overflow: hidden;
+      border-radius: 0 95px 0 95px;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: -350px;
+      }
+    }
+    img {
+      width: 100%;
+      object-position: -20px 0;
+    }
+  }
+  .tooling {
+    margin-bottom: 120px;
+    &__content {
+      min-height: 800px;
+      align-items: center;
+    }
+    img {
+      position: absolute;
+      right: 50%;
+      height: 800px;
+    }
+  }
+}
