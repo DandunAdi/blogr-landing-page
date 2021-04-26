@@ -49,4 +49,4 @@ In this project I learn how to write css using Sass. I also learn how to create 
 
 ## Author
 
-- Twitter - [@DandunAdi](https://www.twitter.com/lycopene_dev)
+- Twitter - [@lycopene_dev](https://www.twitter.com/lycopene_dev)
