@@ -13,8 +13,78 @@
 @media (max-width: 768px) {
   header {
     .navbar {
+      .hamburger {
+        display: inline-block;
+      }
+      justify-content: space-between;
       &__menu {
         display: none;
+      }
+    }
+    .mobile {
+      width: 100%;
+      position: absolute;
+      display: block;
+
+      &.hide {
+        display: none;
+      }
+
+      &__nav {
+        background-color: $white;
+        text-align: center;
+
+        border-radius: 5px;
+
+        &__auth {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          border-top: 2px solid $mobileNavBg;
+          margin-top: 20px;
+        }
+
+        .navbar__link {
+          color: $headings;
+          margin: 20px;
+
+          img {
+            position: initial;
+          }
+        }
+
+        &__dropdown {
+          ul {
+            display: none;
+          }
+          &.open {
+            img {
+              transform: rotate(180deg);
+            }
+            ul {
+              display: block;
+            }
+            .navbar__link {
+              opacity: 0.7;
+            }
+          }
+        }
+
+        .sub-menu {
+          background-color: $mobileNavBg;
+          padding: 20px;
+          border-radius: 5px;
+
+          li:not(:first-child) {
+            margin-top: 20px;
+          }
+
+          a {
+            color: $bodyCopy;
+            opacity: 0.8;
+          }
+        }
       }
     }
   }

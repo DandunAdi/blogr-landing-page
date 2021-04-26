@@ -92,6 +92,12 @@ a {
   color: white;
 }
 
+.btn__secondary {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  color: white;
+}
+
 .btn__outline {
   border: 2px solid white;
   color: white;
@@ -231,6 +237,15 @@ header {
   border-bottom-left-radius: 95px;
 }
 
+header .navbar .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+header .navbar .hamburger.close {
+  content: url("../images/icon-close.svg");
+}
+
 header .navbar__menu {
   width: 100%;
   padding-top: 10px;
@@ -320,6 +335,10 @@ header .intro {
 header .intro p {
   color: #fafafa;
   font-family: "Overpass", sans-serif;
+}
+
+header .mobile {
+  display: none;
 }
 
 main .design img {
@@ -414,8 +433,78 @@ footer .footer__submenu li a:hover {
 }
 
 @media (max-width: 768px) {
+  header .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .navbar .hamburger {
+    display: inline-block;
+  }
   header .navbar__menu {
     display: none;
+  }
+  header .mobile {
+    width: 100%;
+    position: absolute;
+    display: block;
+  }
+  header .mobile.hide {
+    display: none;
+  }
+  header .mobile__nav {
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+  header .mobile__nav__auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 2px solid #efeff1;
+    margin-top: 20px;
+  }
+  header .mobile__nav .navbar__link {
+    color: #1f3f5b;
+    margin: 20px;
+  }
+  header .mobile__nav .navbar__link img {
+    position: initial;
+  }
+  header .mobile__nav__dropdown ul {
+    display: none;
+  }
+  header .mobile__nav__dropdown.open img {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  header .mobile__nav__dropdown.open ul {
+    display: block;
+  }
+  header .mobile__nav__dropdown.open .navbar__link {
+    opacity: 0.7;
+  }
+  header .mobile__nav .sub-menu {
+    background-color: #efeff1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  header .mobile__nav .sub-menu li:not(:first-child) {
+    margin-top: 20px;
+  }
+  header .mobile__nav .sub-menu a {
+    color: #4b5862;
+    opacity: 0.8;
   }
   main .design {
     display: -ms-grid;

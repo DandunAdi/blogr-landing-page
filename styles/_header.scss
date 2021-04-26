@@ -7,6 +7,13 @@ header {
   border-bottom-left-radius: 95px;
 
   .navbar {
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      &.close {
+        content: url("../images/icon-close.svg");
+      }
+    }
     &__menu {
       width: 100%;
       padding-top: 10px;
@@ -92,5 +99,9 @@ header {
       color: $lightGray;
       font-family: $headingFont;
     }
+  }
+
+  .mobile {
+    display: none;
   }
 }

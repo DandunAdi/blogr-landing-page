@@ -63,6 +63,10 @@ a {
       color: $white;
     }
   }
+  &__secondary {
+    background: linear-gradient(to right, $veryLightRed, $lightRed);
+    color: $white;
+  }
   &__outline {
     border: 2px solid $white;
     color: $white;

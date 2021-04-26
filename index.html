@@ -19,7 +19,7 @@
     <header>
       <nav class="navbar container py-4 flex">
         <img class="navbar__logo" src="./images/logo.svg" alt="logo" />
-
+        <img class="hamburger py-1" src="./images/icon-hamburger.svg" alt="" />
         <div class="navbar__menu flex flex__between">
           <ul class="flex flex__start">
             <li class="navbar__dropdown">
@@ -69,6 +69,68 @@
           <div>
             <a href="#" class="navbar__link">Login</a>
             <a href="#" class="btn btn__primary">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="mobile container hide">
+        <div class="mobile__nav p-2">
+          <ul>
+            <li class="mobile__nav__dropdown">
+              <button class="navbar__link">
+                Product
+                <img
+                  class="navbar__dropdown__arrow"
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                />
+              </button>
+
+              <ul class="sub-menu">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="mobile__nav__dropdown">
+              <button href="#" class="navbar__link">
+                Company
+                <img
+                  class="navbar__dropdown__arrow"
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                />
+              </button>
+
+              <ul class="sub-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="mobile__nav__dropdown">
+              <button href="#" class="navbar__link">
+                Connect
+                <img
+                  class="navbar__dropdown__arrow"
+                  src="./images/icon-arrow-dark.svg"
+                  alt=""
+                />
+              </button>
+
+              <ul class="sub-menu">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="mobile__nav__auth py-1">
+            <a href="#" class="navbar__link">Login</a>
+            <a href="#" class="btn btn__secondary">Sign Up</a>
           </div>
         </div>
       </nav>
